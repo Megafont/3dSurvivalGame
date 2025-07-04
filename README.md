@@ -4,12 +4,15 @@ A 3D survival game with added VR mode based on [this tutorial series](https://ww
 
 ## Asset packs used by this project:
 
-These asset packs need to be installed after you clone this repo:
+**These asset packs need to be installed after you clone this repo:**
 
-* [Fantasy Landscape by Pxltiger](https://assetstore.unity.com/packages/3d/environments/fantasy-landscape-103573)
 * [Fantasy Skybox FREE by Render Knight](https://assetstore.unity.com/packages/2d/textures-materials/sky/fantasy-skybox-free-18353)
 * [SEP - Survival Essentials Pack by Polymind Games](https://assetstore.unity.com/packages/3d/props/sep-survival-essentials-pack-185364)
 * [Terrain Sample Asset Pack by Unity Technologies](https://assetstore.unity.com/packages/3d/environments/landscapes/terrain-sample-asset-pack-145808)
+
+**These asset packs are already included in the repo since some files are modified to make it work in URP rather than BRP:**
+
+* [Fantasy Landscape by Pxltiger](https://assetstore.unity.com/packages/3d/environments/fantasy-landscape-103573)
 
 
 **NOTES:**
