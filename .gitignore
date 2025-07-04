@@ -12,8 +12,8 @@
 /[Uu]ser[Ss]ettings/
 *.log
 /[As]sets/[Ff]antasy[Ee]nvironments/*
-/[As]sets/[Ff]antasy [Ss]kybox [Ff][Rr][Ee][Ee]/*
-/[As]sets/[Hh][Qq] [Ss]urvival [Pp]ack/*
+/[As]sets/[Ff]antasy\ [Ss]kybox\ [Ff][Rr][Ee][Ee]/*
+/[As]sets/[Hh][Qq]\ [Ss]urvival\ [Pp]ack/*
 /[As]sets/[Tt]errain[Ss]ample[Aa]ssets/*
 
 # By default unity supports Blender asset imports, *.blend1 blender files do not need to be commited to version control.
