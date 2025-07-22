@@ -1,4 +1,5 @@
 # 3dSurvivalGame
+
 A 3D survival game with added VR mode based on [this tutorial series](https://www.youtube.com/watch?v=Nxg0vQk05os).
 
 
@@ -14,10 +15,15 @@ A 3D survival game with added VR mode based on [this tutorial series](https://ww
 
 * [Fantasy Landscape by Pxltiger](https://assetstore.unity.com/packages/3d/environments/fantasy-landscape-103573)
 
+## NOTES:
 
-**NOTES:**
 I created the TreeLeavesShaderGraph by following [this tutorial](https://www.youtube.com/watch?v=EBADOmohQ8M).
 
 It should also be noted that the trees move in the wind now, but they do not have LODs for now.
 The shader does not support them. I think it needs to use the TextureSampleLOD node instead.
 I can look into this later if it becomes an issue.
+
+I got started with the VR stuff via [this tutorial](https://www.youtube.com/watch?v=kbBYcVrGZus) on the XR Interaction Toolkit.
+You get the full XR Rig including the hands by installing the samples that go with the XR Interaction Toolkit Unity package.
+Just select that package in the Package Manager, and go to the Samples tab. The Sample Assets package is the first one in the list
+at the time of this writing.

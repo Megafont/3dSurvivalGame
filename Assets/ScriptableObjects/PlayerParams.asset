@@ -12,8 +12,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5a46852b7fa9e04bad55d51c1410b14, type: 3}
   m_Name: PlayerParams
   m_EditorClassIdentifier: 
-  MovementSpeed: 12
+  SlopeLimit: 45
+  StepOffset: 0.3
+  SkinWidth: 0.08
+  MinMoveDistance: 0.001
+  Center: {x: 0, y: 0, z: 0}
+  Radius: 0.6
+  Height: 1.7
+  MovementSpeed: 5
+  TurnSpeed: 60
   JumpHeight: 2
+  MovementSpeed_VR: 5
+  TurnSpeed_VR: 60
+  SnapTurnAmount_VR: 45
+  JumpHeight_VR: 2
+  MaxInteractDistance: 3
+  MaxInteractDistance_VR: 3
+  EnableVrMode: 1
+  VrLeftHand_EnableContinuousMovement: 1
+  VrLeftHand_EnableContinuousTurning: 0
+  VrLeftHand_EnableUiScrolling: 0
+  VrLeftHand_NearFarEnableTeleportDuringNearInteraction: 1
+  VrRightHand_EnableContinuousMovement: 0
+  VrRightHand_EnableContinuousTurning: 0
+  VrRightHand_EnableUiScrolling: 1
+  VrRightHand_NearFarEnableTeleportDuringNearInteraction: 1
   PlayerPrefab: {fileID: 2571668032323145696, guid: de01427f64157064ebe4667665f6d3fc, type: 3}
-  PlayerPrefab_VR: {fileID: 8834725205526465439, guid: 07dc16b09391130409910c4cef8080a3, type: 3}
-  XR_Interaction_Manager_Prefab: {fileID: 400854409792708947, guid: 0f4343bdbf0b1f249a7e2dda5ccf75c8, type: 3}
+  PlayerPrefab_VR: {fileID: 7256653771195008362, guid: f7b6a9675f2506743ad8b1aaaa663756, type: 3}
+  UiSystemPrefab: {fileID: 4038244345198733872, guid: 5c6d5e1d5e6ea8748a58a5269a60b30d, type: 3}
+  UiSystemPrefab_VR: {fileID: 8922007944611635046, guid: 65471f5aa7e3a954d9460b751197512d, type: 3}
+  XR_Interaction_Manager_Prefab: {fileID: 7331581750023871053, guid: a122ba3d559d0c346ae603cfdb6fdf71, type: 3}
+  XR_UI_EventSystem_Prefab: {fileID: 400854409792708947, guid: 0f4343bdbf0b1f249a7e2dda5ccf75c8, type: 3}
