@@ -28,7 +28,7 @@ MonoBehaviour:
   JumpHeight_VR: 2
   MaxInteractDistance: 3
   MaxInteractDistance_VR: 3
-  EnableVrMode: 1
+  EnableVrMode: 0
   VrLeftHand_EnableContinuousMovement: 1
   VrLeftHand_EnableContinuousTurning: 0
   VrLeftHand_EnableUiScrolling: 0

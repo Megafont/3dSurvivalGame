@@ -1,3 +1,4 @@
+using System;
 using SurvivalGame.Systems.Data;
 using SurvivalGame.Systems.Data.ParamsManager;
 using SurvivalGame.Utils;
@@ -7,7 +8,15 @@ namespace SurvivalGame.Player
 {
     public static class PlayerFactory
     {
-        public static GameObject CreatePlayer(Transform spawnPoint, ParametersManager gameParameters)
+/* <<<<<<<<<<<<<<  ✨ Windsurf Command ⭐ >>>>>>>>>>>>>>>> */
+        /// <summary>
+        /// Creates a new player object.
+        /// </summary>
+        /// <param name="spawnPoint">The spawn point of the player.</param>
+        /// <param name="gameParameters">The game parameters.</param>
+        /// <returns>The created player object.</returns>
+/* <<<<<<<<<<  8c75ab3e-1415-4953-8be3-8ee89e819d3c  >>>>>>>>>>> */
+        public static IPlayer CreatePlayer(Transform spawnPoint, ParametersManager gameParameters)
         {
             GameObject playerObject = GameObject.Instantiate(gameParameters.GetParameterData<Transform>(ParameterIDs.PLAYER_PREFAB).Value.gameObject, 
                                                              spawnPoint.position,
@@ -15,10 +24,14 @@ namespace SurvivalGame.Player
 
             InitPlayer(playerObject, gameParameters);
             
-            return playerObject;
+            IPlayer player = playerObject.GetComponent<IPlayer>();
+            if (player == null)
+                throw new Exception("The player prefab does not contain a Player component!");
+
+            return player;
         }
 
-        public static GameObject CreatePlayerVR(Transform spawnPoint, ParametersManager gameParameters)
+        public static IPlayer CreatePlayerVR(Transform spawnPoint, ParametersManager gameParameters)
         {
             GameObject playerObject = GameObject.Instantiate(gameParameters.GetParameterData<Transform>(ParameterIDs.PLAYER_PREFAB_VR).Value.gameObject, 
                                                              spawnPoint.position,
@@ -27,7 +40,11 @@ namespace SurvivalGame.Player
             InitPlayer(playerObject, gameParameters);
             VrUtils.InitVrPlayerObject(playerObject, gameParameters);
             
-            return playerObject;
+            IPlayer player = playerObject.GetComponent<IPlayer>();
+            if (player == null)
+                throw new Exception("The VR player prefab does not contain a Player_VR component!");
+
+            return player;        
         }
 
         private static void InitPlayer(GameObject playerObject, ParametersManager gameParameters)

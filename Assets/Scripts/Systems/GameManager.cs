@@ -24,7 +24,7 @@ namespace SurvivalGame.Systems
         public Transform UiSystemParent { get; private set; }
         public Transform VrSystemParent { get; private set; }
         
-        public GameObject PlayerObject { get; private set; }
+        public IPlayer PlayerObject { get; private set; }
         
         
         
@@ -106,7 +106,7 @@ namespace SurvivalGame.Systems
                 
                 // Now spawn a VR player.
                 if (PlayerObject != null)
-                    DestroyImmediate(PlayerObject);
+                    DestroyImmediate(PlayerObject.gameObject);
                 PlayerObject = PlayerFactory.CreatePlayerVR(_PlayerSpawnPoint, GameParameters);
             }
             else
@@ -122,7 +122,7 @@ namespace SurvivalGame.Systems
                 
                 // Now spawn a non-VR player.
                 if (PlayerObject != null)
-                    DestroyImmediate(PlayerObject);
+                    DestroyImmediate(PlayerObject.gameObject);
                 PlayerObject = PlayerFactory.CreatePlayer(_PlayerSpawnPoint, GameParameters);
                 
             }
